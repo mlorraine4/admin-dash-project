@@ -14,10 +14,9 @@ body {
 }
 
 .container {
-  height:120vh;
+  height:100vh;
   display: grid;
-  grid-template: minmax(140px,20%) 1fr/minmax(200px, 15%) minmax(600px, 65%) minmax(250px, 20%);
-  font-family: "Monsterrat";
+  grid-template: minmax(140px,15%) 1fr/minmax(200px, 15%) minmax(600px, 65%) minmax(250px, 20%);
 }
 
 .header {
@@ -44,20 +43,20 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 50%));
   grid-template-rows: 22.67px repeat(3, auto);
-  grid-gap: 20px;
-  padding: 10px 20px 0 20px;
+  grid-gap: 40px;
+  padding: 30px 20px 0 20px;
   margin-right: 20px;
   margin-top:10px;
   text-align: left;
 }
 
 .sidebar {
-  grid-column: 3/4
+  grid-column: 3/4;
   grid-row: 2/3;
   display: grid;
-  grid-auto-rows: min-content;
-  grid-gap: 20px;
-  margin: 20px 20px 0 0;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 40px;
+  margin: 40px 20px 0 0;
 }
 
 .trending {
